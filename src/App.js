@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import Hoome from './pages/Hoome';
 
 function App() {
   return (
     <div className="App">
-      <h1>React App</h1>
+      <Hoome />
     </div>
   );
 }
