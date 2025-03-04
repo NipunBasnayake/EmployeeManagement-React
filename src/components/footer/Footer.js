@@ -1,17 +1,16 @@
 import React from "react";
+import './Footer.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Footer() {
   return (
-
-    <div class="d-flex flex-column min-vh-100">
-      <main class="flex-grow-1">
-      </main>
-      <footer class="bg-dark text-white text-center py-3">
+    <div class="container-fluid bg-dark text-white py-3 mt-5">
+      <footer class="text-center">
         <p class="mb-0">
-          &copy; 2025 <strong>Employee Management System</strong> | All Rights Reserved
+          &copy; 2025 <strong>Employee Management System</strong> | All Rights
+          Reserved
         </p>
       </footer>
     </div>
-    
   );
 }
