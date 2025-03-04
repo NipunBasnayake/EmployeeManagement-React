@@ -7,14 +7,12 @@ export default function Content() {
   const [searchQuery, setSearchQuery] = useState('');
 
   const searchEmployee = () => {
-    // Filter employee list based on search query
     const filteredList = employeeList.filter(employee =>
       employee.name.toLowerCase().includes(searchQuery.toLowerCase())
     );
     setEmployeeList(filteredList);
   };
 
-  // Function to handle adding a new employee (this can be expanded)
   const addEmployee = () => {
     const newEmployee = {
       id: employeeList.length + 1,
@@ -39,7 +37,7 @@ export default function Content() {
             className="form-control"
             placeholder="Search Employee..."
             value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)} // Update search query
+            onChange={(e) => setSearchQuery(e.target.value)}
           />
           <button className="btn btn-primary" onClick={searchEmployee}>Search</button>
           <button className="btn btn-success ms-5" onClick={addEmployee}>+ Add Employee</button>
