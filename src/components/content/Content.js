@@ -6,7 +6,6 @@ export default function Content() {
   const [employeeList, setEmployeeList] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
 
-  // Function to handle search
   const searchEmployee = () => {
     // Filter employee list based on search query
     const filteredList = employeeList.filter(employee =>
